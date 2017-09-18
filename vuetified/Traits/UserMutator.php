@@ -1,7 +1,9 @@
 <?php
 
 namespace Vuetified\Traits;
+
 use Keygen;
+use Vuetified\Models\SocialAccount;
 
 trait UserMutator
 {
@@ -76,5 +78,14 @@ trait UserMutator
              });
          });
      });
+    }
+
+    public function socialAccounts()
+    {
+        return $this->hasMany(SocialAccount::class);
+    }
+
+    public function findForPassport($identifier) {
+        return $this->orWhere('email', $identifier)->orWhere('username', $identifier)->first();
     }
 }
