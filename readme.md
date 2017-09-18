@@ -7,19 +7,19 @@
 
 **Latest as of now:**
 
-- Node (^8.1.0) && NPM (^5.0.3)
+- Node (^8.5.0) && NPM (^5.3.0)
 - Redis (^3.2.100)
 - PHP (^7.1)
 - Laravel (^5.5)
 - Composer (^1.4.1)
 - VSCODE Insiders && Plugins (ESLINT)
 - Laravel (^5.5)
-- Laravel Echo Server(^1.2.9)
+- Laravel Echo Server(^1.3.1)
 - Laravel Passport (^3.0.0)
-- Laravel Mix (^1.3.0)
+- Laravel Mix (^1.4.3)
 - Laravel Valet for Windows (^2.0.8)
-- Vue (^2.4.2)
-- Vuetify (^0.15)
+- Vue (^2.4.4)
+- Vuetify (^0.15.7)
 
 ## Installation
 

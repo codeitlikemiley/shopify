@@ -1,5 +1,5 @@
 <template>
-    <modal name="cart-modal" :adaptive="true" width="100%" height="100%">
+    <modal name="cart-modal" :adaptive="true" width="100%" height="100%" :clickToClose="false">
         <v-card :flat="true">
         <v-toolbar class="accent">
           <v-btn icon @click.native="closeCart()">

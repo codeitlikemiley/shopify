@@ -491,7 +491,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "cart-modal",
       "adaptive": true,
       "width": "100%",
-      "height": "100%"
+      "height": "100%",
+      "clickToClose": false
     }
   }, [_c('v-card', {
     attrs: {

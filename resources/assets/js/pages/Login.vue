@@ -1,5 +1,5 @@
 <template>
-    <modal name="login-modal" :adaptive="true" width="100%" height="100%">
+    <modal name="login-modal" :adaptive="true" width="100%" height="100%" :clickToClose="false">
         <v-card :flat="true">
         <v-toolbar class="accent">
           <v-btn icon @click.native="closeLogin()">
