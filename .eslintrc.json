@@ -27,6 +27,7 @@
                 "ignoreRestSiblings": true
             }
         ],
+        "no-use-before-define": [1, {"functions": true, "classes": true, "variables": true}],
         "linebreak-style": [
             "error",
             "unix"
