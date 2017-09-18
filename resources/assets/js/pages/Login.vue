@@ -98,13 +98,13 @@ export default {
         login () {
             let self = this
             self.endpoints.web = `api/auth/login`
-            App.post(self.guardedLocation(), self.loginForm)
-                .then((response) => {
-                    self.$state.set('user', response.data.user)
+            App.sendForm('post', self.guardedLocation(), self.loginForm)
+                .then(({user}) => {
+                    self.$state.set('user', user)
                     self.$router.push({ name: 'dashboard' })
-                }).catch(error => {
-                    self.loginForm.errors.set(error.response.data.errors)
-                    self.$popup({ message: error.response.data.message, backgroundColor: '#e57373', delay: 5, color: '#4db6ac' })
+                }).catch(({errors, message}) => {
+                    self.loginForm.errors.set(errors)
+                    self.$popup({ message: message, backgroundColor: '#e57373', delay: 5, color: '#4db6ac' })
                 })
         }
     },

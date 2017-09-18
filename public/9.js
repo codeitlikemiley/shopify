@@ -150,12 +150,17 @@ exports.default = {
         login: function login() {
             var self = this;
             self.endpoints.web = 'api/auth/login';
-            App.post(self.guardedLocation(), self.loginForm).then(function (response) {
-                self.$state.set('user', response.data.user);
+            App.sendForm('post', self.guardedLocation(), self.loginForm).then(function (_ref) {
+                var user = _ref.user;
+
+                self.$state.set('user', user);
                 self.$router.push({ name: 'dashboard' });
-            }).catch(function (error) {
-                self.loginForm.errors.set(error.response.data.errors);
-                self.$popup({ message: error.response.data.message, backgroundColor: '#e57373', delay: 5, color: '#4db6ac' });
+            }).catch(function (_ref2) {
+                var errors = _ref2.errors,
+                    message = _ref2.message;
+
+                self.loginForm.errors.set(errors);
+                self.$popup({ message: message, backgroundColor: '#e57373', delay: 5, color: '#4db6ac' });
             });
         }
     },
