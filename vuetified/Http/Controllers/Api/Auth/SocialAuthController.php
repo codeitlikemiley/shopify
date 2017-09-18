@@ -3,8 +3,8 @@
 namespace Vuetified\Http\Controllers\Api\Auth;
 
 use App\Http\Controllers\Controller;
+use Vuetified\Vuetified;
 use Vuetified\Models\SocialAccount;
-use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
@@ -37,7 +37,7 @@ class SocialAuthController extends Controller
     		return $this->issueToken($request, 'social');
     	}
 
-    	$user = User::where('email', $request->email)->first();
+    	$user = Vuetified::userModel()::where('email', $request->email)->first();
 
     	if($user){
     		$this->addSocialAccountToUser($request, $user);
@@ -57,7 +57,7 @@ class SocialAuthController extends Controller
      * @param Request $request [description]
      * @param User    $user    [description]
      */
-    private function addSocialAccountToUser(Request $request, User $user){
+    private function addSocialAccountToUser(Request $request, $user){
 
     	$this->validate($request, [
     		'provider' => ['required', Rule::unique('social_accounts')->where(function($query) use ($user) {
@@ -82,7 +82,7 @@ class SocialAuthController extends Controller
 
     	DB::transaction( function () use ($request){
 
-    		$user = User::create([
+    		$user = Vuetified::userModel()::create([
     			'name' => $request->name,
     			'email' => $request->email
     		]);
