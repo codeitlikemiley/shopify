@@ -131,16 +131,17 @@ exports.default = {
             }
         };
     },
-    computed: {},
+    computed: {
+        icon: function icon() {
+            return this.password_visible ? 'visibility' : 'visibility_off';
+        }
+    },
     mounted: function mounted() {
         var self = this;
         self.$modal.show('login-modal');
     },
 
     methods: {
-        icon: function icon() {
-            return this.visible ? 'visibility' : 'visibility_off';
-        },
         closeLogin: function closeLogin() {
             var self = this;
             self.$modal.hide('login-modal');
@@ -390,7 +391,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "label": "Enter your password",
       "hint": "At least 8 characters",
       "min": "8",
-      "append-icon": _vm.icon(),
+      "append-icon": _vm.icon,
       "append-icon-cb": function () { return (_vm.password_visible = !_vm.password_visible); },
       "type": _vm.password_visible ? 'password' : 'text',
       "rules": [_vm.rules.password.required, _vm.rules.password.min],

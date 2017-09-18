@@ -41,7 +41,7 @@
             hint="At least 8 characters"
             v-model="loginForm.password"
             min="8"
-            :append-icon="icon()"
+            :append-icon="icon"
             :append-icon-cb="() => (password_visible = !password_visible)"
             :type="password_visible ? 'password' : 'text'"
             :rules="[rules.password.required, rules.password.min]"
@@ -81,16 +81,15 @@ export default {
         }
     }),
     computed: {
-
+        icon () {
+            return this.password_visible ? 'visibility' : 'visibility_off'
+        }
     },
     mounted () {
         let self = this
         self.$modal.show('login-modal')
     },
     methods: {
-        icon () {
-            return this.visible ? 'visibility' : 'visibility_off'
-        },
         closeLogin () {
             let self = this
             self.$modal.hide('login-modal')
