@@ -88,36 +88,22 @@ exports.push([module.i, "\n.shopping-cart[data-v-27d7ed0e] {\n  position: absolu
 /***/ }),
 
 /***/ 608:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Basket_vue__ = __webpack_require__(609);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Basket_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Basket_vue__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
-/* harmony default export */ __webpack_exports__["default"] = ({
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _Basket = __webpack_require__(609);
+
+var _Basket2 = _interopRequireDefault(_Basket);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
     data: function data() {
         return {
             orders: [[]]
@@ -134,7 +120,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         }
     },
     components: {
-        Basket: __WEBPACK_IMPORTED_MODULE_0__Basket_vue___default.a
+        Basket: _Basket2.default
     },
     // when add to cart event is triggered
     // add one item on the cart
@@ -168,7 +154,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             // if registered email then 
         }
     }
-});
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -260,10 +266,14 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 /***/ }),
 
 /***/ 612:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 //
 //
 //
@@ -308,7 +318,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({
+exports.default = {
     props: ['orders'],
     data: function data() {
         return {
@@ -371,7 +381,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             Bus.$emit('close-cart');
         }
     }
-});
+};
 
 /***/ }),
 
