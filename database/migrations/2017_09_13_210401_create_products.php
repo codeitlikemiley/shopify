@@ -13,7 +13,7 @@ class CreateProducts extends Migration
      */
     public function up()
     {
-        Schema::table('products', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('category_id')->nullable();
             $table->string('sku')->unique();

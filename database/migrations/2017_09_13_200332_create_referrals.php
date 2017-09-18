@@ -13,7 +13,7 @@ class CreateReferrals extends Migration
      */
     public function up()
     {
-        Schema::table('referrals', function (Blueprint $table) {
+        Schema::create('referrals', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedBigInteger('referrer_id');
             $table->string('referred_email');

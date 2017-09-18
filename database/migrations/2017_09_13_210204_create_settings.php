@@ -13,10 +13,9 @@ class CreateSettings extends Migration
      */
     public function up()
     {
-        Schema::table('settings', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->increments('id');
-            $table->nullableInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('user_id')->unsigned()->nullable();
             $table->string('title');
             $table->string('description');
             $table->string('keywords');
