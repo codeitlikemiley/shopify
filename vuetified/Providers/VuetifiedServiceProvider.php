@@ -8,7 +8,6 @@ use Vuetified\Console\Commands\VersionCommand;
 use Vuetified\Console\Commands\GenerateEchoAppID;
 use Vuetified\Console\Commands\GenerateEchoAppKey;
 use Vuetified\Console\Commands\GenerateEchoKeys;
-use Vuetified\Console\Presets\PresetCommand;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use App\User;
@@ -30,7 +29,6 @@ class VuetifiedServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 VersionCommand::class,
-                PresetCommand::class,
                 GenerateEchoAppID::class,
                 GenerateEchoAppKey::class,
                 GenerateEchoKeys::class,
