@@ -18,6 +18,7 @@ class VuetifiedServiceProvider extends ServiceProvider
     public function boot()
     {   
          User::observe(UserObserver::class);
+         $this->loadRoutesFrom(base_path('vuetified/Routes/api.php'));
     }
 
     public function register()
