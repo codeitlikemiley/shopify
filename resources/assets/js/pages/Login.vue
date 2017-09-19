@@ -13,15 +13,16 @@
             <v-btn class="primary--text" flat @click.native="login()">Sign In<v-icon right dark>fa-sign-in</v-icon></v-btn>
           </v-toolbar-items>
         </v-toolbar>
-        <v-card-text>
+        <v-card-text style="padding-top:100px;">
       <v-container fluid>
         <form @submit.prevent="login()">
         <v-layout row>
-          <v-flex xs4>
-            <v-subheader>Username</v-subheader>
+          <v-flex xs4 sm4 md2 offset-md3>
+            <v-subheader class="primary--text">Username</v-subheader>
           </v-flex>
-          <v-flex xs8>
+          <v-flex xs8 sm8 md4>
             <v-text-field
+              class="primary--text"
               name="username"
               label="Type Your Account Email"
               v-model="loginForm.username"
@@ -31,11 +32,12 @@
           </v-flex>
         </v-layout>
         <v-layout row>
-          <v-flex xs4>
-            <v-subheader>Password</v-subheader>
+          <v-flex xs4 sm4 md2 offset-md3>
+            <v-subheader class="primary--text">Password</v-subheader>
           </v-flex>
-          <v-flex xs8>
+          <v-flex xs8 sm8 md4>
             <v-text-field
+            class="primary--text"
             name="password"
             label="Enter your password"
             hint="At least 8 characters"
@@ -49,7 +51,12 @@
             ></v-text-field>
           </v-flex>
         </v-layout>
-         <v-btn type="submit" block secondary>Sign In</v-btn>
+        <v-flex xs12 sm12 md6 offset-md3>
+         <v-btn type="submit" block primary>Sign In</v-btn>
+         </v-flex>
+         <div class="text-xs-center" style="padding-top:50px;">
+             <p class="secondary--text body-2">Dont Have An Account Yet?  <router-link to="/register">Click Here to Register</router-link></p>
+         </div>
         </form>
       </v-container>
 

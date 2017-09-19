@@ -244,6 +244,13 @@ exports.default = {
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* Multi Auth Guard Helper */
 
@@ -553,7 +560,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "right": "",
       "dark": ""
     }
-  }, [_vm._v("fa-sign-in")])], 1)], 1)], 1), _vm._v(" "), _c('v-card-text', [_c('v-container', {
+  }, [_vm._v("fa-sign-in")])], 1)], 1)], 1), _vm._v(" "), _c('v-card-text', {
+    staticStyle: {
+      "padding-top": "100px"
+    }
+  }, [_c('v-container', {
     attrs: {
       "fluid": ""
     }
@@ -570,13 +581,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-flex', {
     attrs: {
-      "xs4": ""
+      "xs4": "",
+      "sm4": "",
+      "md2": "",
+      "offset-md3": ""
     }
-  }, [_c('v-subheader', [_vm._v("Username")])], 1), _vm._v(" "), _c('v-flex', {
+  }, [_c('v-subheader', {
+    staticClass: "primary--text"
+  }, [_vm._v("Username")])], 1), _vm._v(" "), _c('v-flex', {
     attrs: {
-      "xs8": ""
+      "xs8": "",
+      "sm8": "",
+      "md4": ""
     }
   }, [_c('v-text-field', {
+    staticClass: "primary--text",
     attrs: {
       "name": "username",
       "label": "Type Your Account Email",
@@ -596,13 +615,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('v-flex', {
     attrs: {
-      "xs4": ""
+      "xs4": "",
+      "sm4": "",
+      "md2": "",
+      "offset-md3": ""
     }
-  }, [_c('v-subheader', [_vm._v("Password")])], 1), _vm._v(" "), _c('v-flex', {
+  }, [_c('v-subheader', {
+    staticClass: "primary--text"
+  }, [_vm._v("Password")])], 1), _vm._v(" "), _c('v-flex', {
     attrs: {
-      "xs8": ""
+      "xs8": "",
+      "sm8": "",
+      "md4": ""
     }
   }, [_c('v-text-field', {
+    staticClass: "primary--text",
     attrs: {
       "name": "password",
       "label": "Enter your password",
@@ -621,13 +648,31 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       },
       expression: "loginForm.password"
     }
-  })], 1)], 1), _vm._v(" "), _c('v-btn', {
+  })], 1)], 1), _vm._v(" "), _c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm12": "",
+      "md6": "",
+      "offset-md3": ""
+    }
+  }, [_c('v-btn', {
     attrs: {
       "type": "submit",
       "block": "",
-      "secondary": ""
+      "primary": ""
     }
-  }, [_vm._v("Sign In")])], 1)])], 1)], 1)], 1)
+  }, [_vm._v("Sign In")])], 1), _vm._v(" "), _c('div', {
+    staticClass: "text-xs-center",
+    staticStyle: {
+      "padding-top": "50px"
+    }
+  }, [_c('p', {
+    staticClass: "secondary--text body-2"
+  }, [_vm._v("Dont Have An Account Yet?  "), _c('router-link', {
+    attrs: {
+      "to": "/register"
+    }
+  }, [_vm._v("Click Here to Register")])], 1)])], 1)])], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
