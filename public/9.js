@@ -167,13 +167,14 @@ exports.default = {
                 self.$state.set('access_token', access_token);
                 self.$state.set('expires_in', expires_in);
                 self.$state.set('token_type', token_type);
+                self.$popup({ message: 'Successfully Logged In!', backgroundColor: '#4db6ac', delay: 5, color: '#fffffa' });
                 self.$router.push({ name: 'dashboard' });
             }).catch(function (_ref2) {
                 var errors = _ref2.errors,
                     message = _ref2.message;
 
                 self.loginForm.errors.set(errors);
-                self.$popup({ message: message, backgroundColor: '#e57373', delay: 5, color: '#4db6ac' });
+                self.$popup({ message: message, backgroundColor: '#e57373', delay: 5, color: '#fffffa' });
             });
         }
     },
