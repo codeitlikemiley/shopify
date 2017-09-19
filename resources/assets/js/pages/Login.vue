@@ -59,7 +59,12 @@
 </template>
 
 <script>
+/* Multi Auth Guard Helper */
 import guards from './../mixins/guard'
+/* Facebook Login */
+import facebookLogin from 'facebook-login-vuejs'
+/* Google Recaptcha */
+import VueRecaptcha from 'vue-recaptcha'
 export default {
     mixins: [guards],
     data: () => ({
@@ -112,6 +117,10 @@ export default {
         name () {
             this.errorMessages = []
         }
+    },
+    components: {
+        facebookLogin,
+        VueRecaptcha
     }
 }
 </script>

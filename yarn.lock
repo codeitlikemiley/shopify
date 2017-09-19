@@ -2739,6 +2739,10 @@ extsprintf@1.3.0, extsprintf@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
 
+facebook-login-vuejs@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/facebook-login-vuejs/-/facebook-login-vuejs-2.1.3.tgz#6f76310335336a2e1c273b531f0315a744089914"
+
 fancy-log@^1.1.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/fancy-log/-/fancy-log-1.3.0.tgz#45be17d02bb9917d60ccffd4995c999e6c8c9948"
@@ -3969,7 +3973,7 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-jquery@^3.2.1:
+jquery@>=1.7.2, jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
@@ -6199,6 +6203,12 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
+slick-carousel@^1.6.0:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.7.1.tgz#51f5489bbb52212542ccbe9f42689f818bd29ed2"
+  dependencies:
+    jquery ">=1.7.2"
+
 sntp@1.x.x:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/sntp/-/sntp-1.0.9.tgz#6541184cc90aeea6c6e7b35e2659082443c66198"
@@ -6977,6 +6987,10 @@ uws@~0.14.4:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/uws/-/uws-0.14.5.tgz#67aaf33c46b2a587a5f6666d00f7691328f149dc"
 
+v-img@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/v-img/-/v-img-0.1.0.tgz#7a4a258f0a874e5ba9d0ab40d482d885df3a6432"
+
 vali-date@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vali-date/-/vali-date-1.0.0.tgz#1b904a59609fb328ef078138420934f6b86709a6"
@@ -7066,6 +7080,24 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-acl@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/vue-acl/-/vue-acl-2.2.2.tgz#91c36a7c402c83eed9adf1d06a42f347f6bed66f"
+
+vue-agile@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/vue-agile/-/vue-agile-0.2.5.tgz#1083080f33a0c7c3cc1ae1afc04f8beb05e7e82d"
+  dependencies:
+    vue "2.*.*"
+
+vue-clazy-load@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vue-clazy-load/-/vue-clazy-load-0.2.0.tgz#e7b32fba813d85196b453c88b4f8745fd342bad9"
+
+vue-clicky@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vue-clicky/-/vue-clicky-1.1.0.tgz#5585664b4c9a8ded01a267f7074ada0a87340a07"
+
 vue-cookie-law@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/vue-cookie-law/-/vue-cookie-law-1.3.0.tgz#300c336a637210418cac3f5a8a0f89426a2ef4c0"
@@ -7073,6 +7105,10 @@ vue-cookie-law@^1.3.0:
 vue-default-value@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vue-default-value/-/vue-default-value-1.0.2.tgz#d6b1741a4ee94d433b5389586b096045ac347054"
+
+vue-disqus@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/vue-disqus/-/vue-disqus-2.0.3.tgz#33da59fdacc8fe687057561ef35de555369f2f1c"
 
 vue-echo@^1.0.1:
   version "1.0.1"
@@ -7134,9 +7170,19 @@ vue-localstorage@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/vue-localstorage/-/vue-localstorage-0.4.2.tgz#f2c8b7cb108f4e5a692aefb91703a082258bcfe0"
 
+vue-recaptcha@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/vue-recaptcha/-/vue-recaptcha-0.4.0.tgz#1ad80e5ceb66b83131d3edb079221eb26fc74bf0"
+
 vue-router@^2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.7.0.tgz#16d424493aa51c3c8cce8b7c7210ea4c3a89aff1"
+
+vue-slick@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/vue-slick/-/vue-slick-1.1.9.tgz#b8916c49124f0b17eea6b155a771f3a8a9789fb4"
+  dependencies:
+    slick-carousel "^1.6.0"
 
 vue-style-loader@^3.0.0:
   version "3.0.3"
@@ -7156,6 +7202,10 @@ vue-template-es2015-compiler@^1.2.2:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.3.tgz#22787de4e37ebd9339b74223bc467d1adee30545"
 
+vue-timeago@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/vue-timeago/-/vue-timeago-3.3.6.tgz#c849042ddaf159f24c80ac317211a0d4b427e5fc"
+
 vue-trumbowyg@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/vue-trumbowyg/-/vue-trumbowyg-1.0.3.tgz#6567df3d1892b13d35b3b7aadce9926e443cf792"
@@ -7168,6 +7218,10 @@ vue-turbolinks@^2.0.0:
   dependencies:
     vue "^2.2.4"
 
+vue-youtube-embed@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vue-youtube-embed/-/vue-youtube-embed-2.1.2.tgz#de5992c4e0aa99cbc9ae5e1e076c94e2f049a5c2"
+
 vue2-dropzone@^2.3.5:
   version "2.3.5"
   resolved "https://registry.yarnpkg.com/vue2-dropzone/-/vue2-dropzone-2.3.5.tgz#a567c873b42c36e4dfd7e1941bba4c65553a471e"
@@ -7179,9 +7233,13 @@ vue2-filters@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/vue2-filters/-/vue2-filters-0.2.1.tgz#f0c79df41a8c396134d1983110879b19fd0e27c8"
 
-vue@^2.0.0, vue@^2.2.4, vue@^2.2.6, vue@^2.4.2, vue@^2.4.4:
+vue@2.*.*, vue@^2.0.0, vue@^2.2.4, vue@^2.2.6, vue@^2.4.2, vue@^2.4.4:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.4.4.tgz#ea9550b96a71465fd2b8b17b61673b3561861789"
+
+vuebars@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vuebars/-/vuebars-0.1.1.tgz#a26200e9794bae8986e279d182481a61b74ce9c9"
 
 vuetify@^0.15.7:
   version "0.15.7"

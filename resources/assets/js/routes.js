@@ -20,45 +20,82 @@ const routes = [
     {
         path: '/',
         name: 'home',
-        component: Home
+        component: Home,
+        meta: {
+            permission: 'admin|any'
+        },
+        fail: '/error'
     },
     {
         path: '/about',
         component: About,
-        name: 'about'
+        name: 'about',
+        meta: {
+            permission: 'admin|any'
+        },
+        fail: '/error'
     },
     {
         path: '/cart',
         component: Cart,
-        name: 'cart'
+        name: 'cart',
+        meta: {
+            permission: 'admin|any'
+        },
+        fail: '/error'
     },
     {
         path: '/checkout',
         component: Checkout,
         name: 'checkout',
-        meta: { requiresAuth: true }
+        meta: { requiresAuth: true, permission: 'admin|any' },
+        fail: '/error'
     },
     {
         path: '/courses',
-        component: Courses
+        component: Courses,
+        meta: {
+            permission: 'admin|any'
+        },
+        fail: '/error'
     },
     {
         path: '/dashboard',
         component: Dashboard,
         name: 'dashboard',
-        meta: { requiresAuth: true }
+        meta: { requiresAuth: true },
+        fail: '/error'
     },
     {
         path: '/login',
-        component: Login
+        component: Login,
+        meta: {
+            permission: 'admin|any'
+        },
+        fail: '/error'
     },
     {
         path: '/register',
-        component: Register
+        component: Register,
+        meta: {
+            permission: 'any'
+        },
+        fail: '/error'
     },
     {
         path: '/support',
-        component: Support
+        component: Support,
+        meta: {
+            permission: 'any'
+        },
+        fail: '/error'
+    },
+    {
+        path: '/error',
+        component: NotFound,
+        meta: {
+            permission: 'any'
+        }
     },
     /* Default Route */
     { path: '*', component: NotFound }

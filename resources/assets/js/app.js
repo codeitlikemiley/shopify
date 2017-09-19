@@ -15,6 +15,10 @@ import groupChannel from './mixins/presence-channel'
 import listener from './mixins/listener'
 /* Our Main Vue Instance */
 import MainVue from './App.vue'
+/* Add ACL */
+import Acl from 'vue-acl'
+
+Vue.use(Acl, { router, init: 'any' })
 
 /* Vue Instance with TurboLinks */
 document.addEventListener('turbolinks:load', () => {

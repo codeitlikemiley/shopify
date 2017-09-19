@@ -14,8 +14,19 @@ import VeeValidate from 'vee-validate'
 /* Seed Initial Data */
 import initialData from './mixins/initial-state'
 import vueKanban from 'vue-kanban'
+/* Human Readable Time */
+import VueTimeago from 'vue-timeago'
+/* Carousels */
+import VueAgile from 'vue-agile'
+/* Chart */
+import Bars from 'vuebars'
+/* Youtube */
+import VueYouTubeEmbed from 'vue-youtube-embed'
+/* Image Lazy Load */
+import VueClazyLoad from 'vue-clazy-load'
+/* Image Directive */
+import VueImg from 'v-img'
 
-Vue.use(vueKanban)
 /*
  * Load Vue
  *
@@ -24,6 +35,7 @@ if (window.Vue === undefined) {
     window.Vue = Vue
     window.Bus = new Vue()
 }
+
 /*
  * All Global Mixins
  *
@@ -108,6 +120,48 @@ Vue.use(vmodal)
 Vue.use(VueUp)
 
 /**
+ * Load Kanban
+ */
+Vue.use(vueKanban)
+
+/**
+ * Load VueAgile
+ */
+Vue.use(VueAgile)
+
+/**
+ * Load Bars
+ */
+Vue.use(Bars)
+
+/**
+ * Load VueYouTubeEmbed
+ */
+Vue.use(VueYouTubeEmbed)
+
+/**
+ * Load VueClazyLoad
+ */
+Vue.use(VueClazyLoad)
+
+/**
+ * Load VueImg
+ */
+Vue.use(VueImg)
+
+/**
+ * Load VueTimeago
+ */
+Vue.use(VueTimeago, {
+    name: 'timeago', // component name, `timeago` by default
+    locale: 'en-US',
+    locales: {
+        // you will need json-loader in webpack 1
+        'en-US': require('vue-timeago/locales/en-US.json')
+    }
+})
+
+/**
  * Load Laravel Echo
  */
 
@@ -121,4 +175,8 @@ if (typeof io !== 'undefined') {
     })
     /* Install VueEcho: this.$echo */
     Vue.use(VueEcho, EchoInstance)
+}
+
+if (process.env.NODE_ENV === 'development') {
+    require('vue-clicky')
 }

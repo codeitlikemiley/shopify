@@ -1,18 +1,18 @@
 webpackJsonp([8],{
 
-/***/ 550:
+/***/ 558:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(606)
+  __webpack_require__(616)
 }
 var Component = __webpack_require__(96)(
   /* script */
-  __webpack_require__(608),
+  __webpack_require__(618),
   /* template */
-  __webpack_require__(614),
+  __webpack_require__(624),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45,13 +45,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 606:
+/***/ 616:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(607);
+var content = __webpack_require__(617);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -72,7 +72,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 607:
+/***/ 617:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(256)(undefined);
@@ -87,7 +87,7 @@ exports.push([module.i, "\n.shopping-cart[data-v-27d7ed0e] {\n  position: absolu
 
 /***/ }),
 
-/***/ 608:
+/***/ 618:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97,7 +97,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Basket = __webpack_require__(609);
+var _Basket = __webpack_require__(619);
 
 var _Basket2 = _interopRequireDefault(_Basket);
 
@@ -178,19 +178,19 @@ exports.default = {
 
 /***/ }),
 
-/***/ 609:
+/***/ 619:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(610)
+  __webpack_require__(620)
 }
 var Component = __webpack_require__(96)(
   /* script */
-  __webpack_require__(612),
+  __webpack_require__(622),
   /* template */
-  __webpack_require__(613),
+  __webpack_require__(623),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -223,13 +223,13 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 610:
+/***/ 620:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(611);
+var content = __webpack_require__(621);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -250,7 +250,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 611:
+/***/ 621:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(256)(undefined);
@@ -265,7 +265,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 612:
+/***/ 622:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -385,7 +385,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 613:
+/***/ 623:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -482,7 +482,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 614:
+/***/ 624:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
