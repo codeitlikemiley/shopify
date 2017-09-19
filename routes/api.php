@@ -19,3 +19,9 @@ Route::middleware('auth:api')->group(function () {
     return $request->user();
     });
 });
+
+// Route::get('/orders', function () {
+//     // Access token has both "check-status" and "place-orders" scopes...
+// })->middleware('scopes:check-status,place-orders');
+// Access token has either "check-status" or "place-orders" scope...
+// ->middleware('scope:check-status,place-orders')

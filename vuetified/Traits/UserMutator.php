@@ -2,7 +2,7 @@
 
 namespace Vuetified\Traits;
 
-use Keygen;
+use Keygen\Keygen;
 use Vuetified\Models\SocialAccount;
 
 trait UserMutator

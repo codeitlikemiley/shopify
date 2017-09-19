@@ -158,11 +158,15 @@ exports.default = {
         },
         login: function login() {
             var self = this;
-            self.endpoints.web = 'api/auth/login';
-            App.sendForm('post', self.guardedLocation(), self.loginForm).then(function (_ref) {
-                var user = _ref.user;
+            self.endpoints.web = route('api.auth.login');
+            App.post(self.guardedLocation(), self.loginForm).then(function (_ref) {
+                var access_token = _ref.access_token,
+                    expires_in = _ref.expires_in,
+                    token_type = _ref.token_type;
 
-                self.$state.set('user', user);
+                self.$state.set('access_token', access_token);
+                self.$state.set('expires_in', expires_in);
+                self.$state.set('token_type', token_type);
                 self.$router.push({ name: 'dashboard' });
             }).catch(function (_ref2) {
                 var errors = _ref2.errors,

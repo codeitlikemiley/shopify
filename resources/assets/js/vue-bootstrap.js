@@ -25,7 +25,7 @@ import VueYouTubeEmbed from 'vue-youtube-embed'
 /* Image Lazy Load */
 import VueClazyLoad from 'vue-clazy-load'
 /* Image Directive */
-import VueImg from 'v-img'
+// import VueImg from 'v-img'
 
 /*
  * Load Vue
@@ -147,7 +147,7 @@ Vue.use(VueClazyLoad)
 /**
  * Load VueImg
  */
-Vue.use(VueImg)
+// Vue.use(VueImg)
 
 /**
  * Load VueTimeago

@@ -22,7 +22,7 @@ const routes = [
         name: 'home',
         component: Home,
         meta: {
-            permission: 'admin|any'
+            permission: 'any'
         },
         fail: '/error'
     },
@@ -31,7 +31,7 @@ const routes = [
         component: About,
         name: 'about',
         meta: {
-            permission: 'admin|any'
+            permission: 'any'
         },
         fail: '/error'
     },
@@ -40,7 +40,7 @@ const routes = [
         component: Cart,
         name: 'cart',
         meta: {
-            permission: 'admin|any'
+            permission: 'any'
         },
         fail: '/error'
     },
@@ -48,14 +48,14 @@ const routes = [
         path: '/checkout',
         component: Checkout,
         name: 'checkout',
-        meta: { requiresAuth: true, permission: 'admin|any' },
+        meta: { requiresAuth: true, permission: 'any' },
         fail: '/error'
     },
     {
         path: '/courses',
         component: Courses,
         meta: {
-            permission: 'admin|any'
+            permission: 'any'
         },
         fail: '/error'
     },
@@ -63,14 +63,14 @@ const routes = [
         path: '/dashboard',
         component: Dashboard,
         name: 'dashboard',
-        meta: { requiresAuth: true },
+        meta: { requiresAuth: true, permission: 'any' },
         fail: '/error'
     },
     {
         path: '/login',
         component: Login,
         meta: {
-            permission: 'admin|any'
+            permission: 'any'
         },
         fail: '/error'
     },

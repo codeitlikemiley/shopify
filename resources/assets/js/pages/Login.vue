@@ -109,10 +109,12 @@ export default {
         },
         login () {
             let self = this
-            self.endpoints.web = `api/auth/login`
-            App.sendForm('post', self.guardedLocation(), self.loginForm)
-                .then(({user}) => {
-                    self.$state.set('user', user)
+            self.endpoints.web = route('api.auth.login')
+            App.post(self.guardedLocation(), self.loginForm)
+                .then(({access_token, expires_in, token_type}) => {
+                    self.$state.set('access_token', access_token)
+                    self.$state.set('expires_in', expires_in)
+                    self.$state.set('token_type', token_type)
                     self.$router.push({ name: 'dashboard' })
                 }).catch(({errors, message}) => {
                     self.loginForm.errors.set(errors)

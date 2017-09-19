@@ -1,5 +1,5 @@
 /**
- * RoyalflushForm helper class. Used to set common properties on all forms.
+ * Vuetified helper class. Used to set common properties on all forms.
  */
 window.AppForm = function (data) {
     var form = this

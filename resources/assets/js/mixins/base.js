@@ -58,7 +58,7 @@ module.exports = {
         refreshApiToken () {
             this.lastRefreshedApiTokenAt = moment()
 
-            axios.put('/api/refresh/token')
+            axios.post('refresh')
         }
 
     }

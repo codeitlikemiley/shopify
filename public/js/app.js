@@ -36520,14 +36520,27 @@ var _vueClazyLoad = __webpack_require__(506);
 
 var _vueClazyLoad2 = _interopRequireDefault(_vueClazyLoad);
 
-var _vImg = __webpack_require__(507);
-
-var _vImg2 = _interopRequireDefault(_vImg);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/* Image Directive */
+// import VueImg from 'v-img'
 
 /*
  * Load Vue
+ *
+ */
+
+/* Youtube */
+
+/* Carousels */
+/* IE 11 Compatible */
+if (window.Vue === undefined) {
+  window.Vue = _vue2.default;
+  window.Bus = new _vue2.default();
+}
+
+/*
+ * All Global Mixins
  *
  */
 
@@ -36540,22 +36553,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* Seed Initial Data */
 
 // import VueModelAutoset from 'vue-model-autoset'
-if (window.Vue === undefined) {
-  window.Vue = _vue2.default;
-  window.Bus = new _vue2.default();
-}
-
-/*
- * All Global Mixins
- *
- */
-
-/* Image Directive */
-
-/* Youtube */
-
-/* Carousels */
-/* IE 11 Compatible */
 _vue2.default.mixin(_initialState2.default);
 /**
  * Form Helpers
@@ -36663,7 +36660,7 @@ _vue2.default.use(_vueClazyLoad2.default);
 /**
  * Load VueImg
  */
-_vue2.default.use(_vImg2.default);
+// Vue.use(VueImg)
 
 /**
  * Load VueTimeago
@@ -64054,16 +64051,7 @@ var install = ClazyLoad.install;
 });
 
 /***/ }),
-/* 507 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-!function(){if("undefined"!=typeof document){var e=document.head||document.getElementsByTagName("head")[0],t=document.createElement("style"),i=" *[data-v-5928e1c7] { -webkit-box-sizing: border-box; box-sizing: border-box; } .fullscreen-v-img[data-v-5928e1c7] { z-index: 9999; height: 100%; width: 100%; position: fixed; top: 0; left: 0; overflow: hidden; background-color: rgba(0, 0, 0, .7); -ms-touch-action: none; touch-action: none; } .content-v-img img[data-v-5928e1c7] { width: auto; height: auto; max-width: 100%; max-height: 100%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } .header-v-img[data-v-5928e1c7] { position: absolute; width: 100%; background-color: rgba(0, 0, 0, .3); height: 50px; z-index: 9999; display: flex; justify-content: space-between; align-items: center; } .title-v-img[data-v-5928e1c7] { font-family: 'Avenir', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; color: white; text-align: center; max-height: 100%; overflow: auto; } .count-v-img[data-v-5928e1c7], .close-v-img[data-v-5928e1c7] { width: 80px; font-family: 'Avenir', Helvetica, Arial, sans-serif; line-height: 50px; } .count-v-img[data-v-5928e1c7] { font-size: 15px; color: white; margin-left: 10px; } .close-v-img[data-v-5928e1c7] { margin-right: 10px; color: #E5E6EB; font-size: 30px; cursor: pointer; -webkit-transition: color .4s ease-in-out; transition: color .4s ease-in-out; text-align: right; } .close-v-img[data-v-5928e1c7]:hover { color: white; } .prev-v-img svg[data-v-5928e1c7], .next-v-img svg[data-v-5928e1c7] { margin: 5px auto; } .prev-v-img[data-v-5928e1c7], .next-v-img[data-v-5928e1c7] { color: white; width: 35px; height: 35px; position: absolute; top: 50%; margin-top: -12.5px; font-size: 15px; font-family: 'Avenir', Helvetica, Arial, sans-serif; text-align: center; background-color: rgba(0, 0, 0, .3); z-index: 1000; opacity: .3; -webkit-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; cursor: pointer; } .prev-v-img[data-v-5928e1c7]:hover, .next-v-img[data-v-5928e1c7]:hover { opacity: 1; } .prev-v-img[data-v-5928e1c7] { left: 10px; } .next-v-img[data-v-5928e1c7] { right: 10px; } .v-img-fade-enter[data-v-5928e1c7], .v-img-fade-leave-to[data-v-5928e1c7] { opacity: 0; } .v-img-fade-enter-active[data-v-5928e1c7], .v-img-fade-leave-active[data-v-5928e1c7] { -webkit-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; } .body-fs-v-img {} ";t.type="text/css",t.styleSheet?t.styleSheet.cssText=i:t.appendChild(document.createTextNode(i)),e.appendChild(t)}}();var ImgScreen={render:function(){var e=this,t=e.$createElement,i=e._self._c||t;return i("transition",{attrs:{appear:"",name:"v-img-fade"}},[e.closed?e._e():i("div",{staticClass:"fullscreen-v-img",on:{click:function(t){if(t.target!==t.currentTarget)return null;e.close()}}},[i("div",{staticClass:"header-v-img"},[i("span",{staticClass:"count-v-img"},[e.images.length>1?i("span",[e._v(e._s(e.currentImageIndex+1)+"/"+e._s(e.images.length)+" ")]):e._e()]),i("span",{staticClass:"title-v-img"},[e._v(e._s(e.titles[e.currentImageIndex])+" ")]),i("span",{staticClass:"close-v-img",on:{click:e.close}},[e._v("×")])]),i("transition",{attrs:{appear:"",name:"v-img-fade"}},[e.visibleUI&&1!==e.images.length?i("span",{staticClass:"prev-v-img",on:{click:e.prev}},[i("svg",{attrs:{width:"25",height:"25",viewBox:"0 0 1792 1915",xmlns:"http://www.w3.org/2000/svg"}},[i("path",{attrs:{d:"M1664 896v128q0 53-32.5 90.5t-84.5 37.5h-704l293 294q38 36 38 90t-38 90l-75 76q-37 37-90 37-52 0-91-37l-651-652q-37-37-37-90 0-52 37-91l651-650q38-38 91-38 52 0 90 38l75 74q38 38 38 91t-38 91l-293 293h704q52 0 84.5 37.5t32.5 90.5z",fill:"#fff"}})])]):e._e()]),i("transition",{attrs:{appear:"",name:"v-img-fade"}},[e.visibleUI&&1!==e.images.length?i("span",{staticClass:"next-v-img",on:{click:e.next}},[i("svg",{attrs:{width:"25",height:"25",viewBox:"0 0 1792 1915",xmlns:"http://www.w3.org/2000/svg"}},[i("path",{attrs:{d:"M1600 960q0 54-37 91l-651 651q-39 37-91 37-51 0-90-37l-75-75q-38-38-38-91t38-91l293-293h-704q-52 0-84.5-37.5t-32.5-90.5v-128q0-53 32.5-90.5t84.5-37.5h704l-293-294q-38-36-38-90t38-90l75-75q38-38 90-38 53 0 91 38l651 651q37 35 37 90z",fill:"#fff"}})])]):e._e()]),i("div",{staticClass:"content-v-img"},[i("img",{attrs:{src:e.images[e.currentImageIndex]},on:{click:e.next}})])],1)])},staticRenderFns:[],_scopeId:"data-v-5928e1c7",data:function(){return{images:[],titles:[],visibleUI:!0,currentImageIndex:0,closed:!0,uiTimeout:null}},methods:{close:function(){document.querySelector("body").classList.remove("body-fs-v-img"),this.images=[],this.currentImageIndex=0,this.closed=!0},next:function(){this.currentImageIndex+1<this.images.length?this.currentImageIndex++:this.currentImageIndex=0},prev:function(){this.currentImageIndex>0?this.currentImageIndex--:this.currentImageIndex=this.images.length-1},showUI:function(){var e=this;clearTimeout(this.uiTimeout),this.visibleUI=!0,this.uiTimeout=setTimeout(function(){e.visibleUI=!1},3500)}},created:function(){var e=this;window.addEventListener("keyup",function(t){27!==t.keyCode&&81!==t.keyCode||e.close(),39!==t.keyCode&&76!==t.keyCode||e.next(),37!==t.keyCode&&72!==t.keyCode||e.prev()}),window.addEventListener("scroll",function(){e.close()}),window.addEventListener("mousemove",function(){e.showUI()})}},babelHelpers={},asyncGenerator=function(){function e(e){this.value=e}function t(t){function i(a,r){try{var o=t[a](r),s=o.value;s instanceof e?Promise.resolve(s.value).then(function(e){i("next",e)},function(e){i("throw",e)}):n(o.done?"return":"normal",o.value)}catch(e){n("throw",e)}}function n(e,t){switch(e){case"return":a.resolve({value:t,done:!0});break;case"throw":a.reject(t);break;default:a.resolve({value:t,done:!1})}(a=a.next)?i(a.key,a.arg):r=null}var a,r;this._invoke=function(e,t){return new Promise(function(n,o){var s={key:e,arg:t,resolve:n,reject:o,next:null};r?r=r.next=s:(a=r=s,i(e,t))})},"function"!=typeof t.return&&(this.return=void 0)}return"function"==typeof Symbol&&Symbol.asyncIterator&&(t.prototype[Symbol.asyncIterator]=function(){return this}),t.prototype.next=function(e){return this._invoke("next",e)},t.prototype.throw=function(e){return this._invoke("throw",e)},t.prototype.return=function(e){return this._invoke("return",e)},{wrap:function(e){return function(){return new t(e.apply(this,arguments))}},await:function(t){return new e(t)}}}(),toConsumableArray=function(e){if(Array.isArray(e)){for(var t=0,i=Array(e.length);t<e.length;t++)i[t]=e[t];return i}return Array.from(e)},install=function(e,t){var i=e.extend(ImgScreen),n={altAsTitle:!1};t=Object.assign(n,t),e.directive("img",{bind:function(n,a){var r="pointer",o=n.src,s=a.arg||null,c=void 0;t.altAsTitle&&(c=n.alt),void 0!==a.value&&(r=a.value.cursor||r,o=a.value.src||o,s=a.value.group||s,c=a.value.title||c),n.setAttribute("data-vue-img-group",s||""),n.setAttribute("data-vue-img-src",o),n.setAttribute("data-vue-img-title",c||""),o||console.error("v-img element missing src parameter."),n.style.cursor=r;var l=window.vueImg;if(!l){var u=document.createElement("div");u.setAttribute("id","imageScreen"),document.querySelector("body").appendChild(u),l=window.vueImg=(new i).$mount("#imageScreen")}n.addEventListener("click",function(){document.querySelector("body").classList.add("body-fs-v-img");var t=[].concat(toConsumableArray(document.querySelectorAll('img[data-vue-img-group="'+s+'"]')));0===t.length?(e.set(l,"images",[o]),e.set(l,"titles",[c])):(e.set(l,"images",t.map(function(e){return e.dataset.vueImgSrc})),e.set(l,"titles",t.map(function(e){return e.dataset.vueImgTitle})),e.set(l,"currentImageIndex",t.indexOf(n))),e.set(l,"closed",!1)})}})};/* harmony default export */ __webpack_exports__["default"] = (install);
-//# sourceMappingURL=v-img.mjs.map
-
-
-/***/ }),
+/* 507 */,
 /* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -64121,54 +64109,54 @@ App.forms = {
 
 
 /**
- * RoyalflushForm helper class. Used to set common properties on all forms.
+ * Vuetified helper class. Used to set common properties on all forms.
  */
 window.AppForm = function (data) {
-    var form = this;
+  var form = this;
 
-    _.extend(this, data);
+  _.extend(this, data);
 
-    /**
-     * Create the form error helper instance.
-     */
-    this.errors = new AppFormErrors();
+  /**
+   * Create the form error helper instance.
+   */
+  this.errors = new AppFormErrors();
 
-    this.busy = false;
-    this.successful = false;
+  this.busy = false;
+  this.successful = false;
 
-    /**
-     * Start processing the form.
-     */
-    this.startProcessing = function () {
-        form.errors.forget();
-        form.busy = true;
-        form.successful = false;
-    };
+  /**
+   * Start processing the form.
+   */
+  this.startProcessing = function () {
+    form.errors.forget();
+    form.busy = true;
+    form.successful = false;
+  };
 
-    /**
-     * Finish processing the form.
-     */
-    this.finishProcessing = function () {
-        form.busy = false;
-        form.successful = true;
-    };
+  /**
+   * Finish processing the form.
+   */
+  this.finishProcessing = function () {
+    form.busy = false;
+    form.successful = true;
+  };
 
-    /**
-     * Reset the errors and other state for the form.
-     */
-    this.resetStatus = function () {
-        form.errors.forget();
-        form.busy = false;
-        form.successful = false;
-    };
+  /**
+   * Reset the errors and other state for the form.
+   */
+  this.resetStatus = function () {
+    form.errors.forget();
+    form.busy = false;
+    form.successful = false;
+  };
 
-    /**
-     * Set the errors on the form.
-     */
-    this.setErrors = function (errors) {
-        form.busy = false;
-        form.errors.set(errors);
-    };
+  /**
+   * Set the errors on the form.
+   */
+  this.setErrors = function (errors) {
+    form.busy = false;
+    form.errors.set(errors);
+  };
 };
 
 /***/ }),
@@ -64454,7 +64442,7 @@ module.exports = {
         refreshApiToken: function refreshApiToken() {
             this.lastRefreshedApiTokenAt = moment();
 
-            axios.put('/api/refresh/token');
+            axios.post('refresh');
         }
     }
 };
@@ -64523,7 +64511,7 @@ var routes = [{
     name: 'home',
     component: Home,
     meta: {
-        permission: 'admin|any'
+        permission: 'any'
     },
     fail: '/error'
 }, {
@@ -64531,7 +64519,7 @@ var routes = [{
     component: About,
     name: 'about',
     meta: {
-        permission: 'admin|any'
+        permission: 'any'
     },
     fail: '/error'
 }, {
@@ -64539,33 +64527,33 @@ var routes = [{
     component: Cart,
     name: 'cart',
     meta: {
-        permission: 'admin|any'
+        permission: 'any'
     },
     fail: '/error'
 }, {
     path: '/checkout',
     component: Checkout,
     name: 'checkout',
-    meta: { requiresAuth: true, permission: 'admin|any' },
+    meta: { requiresAuth: true, permission: 'any' },
     fail: '/error'
 }, {
     path: '/courses',
     component: Courses,
     meta: {
-        permission: 'admin|any'
+        permission: 'any'
     },
     fail: '/error'
 }, {
     path: '/dashboard',
     component: Dashboard,
     name: 'dashboard',
-    meta: { requiresAuth: true },
+    meta: { requiresAuth: true, permission: 'any' },
     fail: '/error'
 }, {
     path: '/login',
     component: Login,
     meta: {
-        permission: 'admin|any'
+        permission: 'any'
     },
     fail: '/error'
 }, {
@@ -67167,7 +67155,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
     login: function login(loginData) {
         return axios.post('/api/auth/login', loginData).then(function (response) {
-            _ls2.default.set('auth.token', response.data.token);
+            _ls2.default.set('auth.token', response.data.access_token);
+            _ls2.default.set('auth.expires_in', response.data.expires_in);
+            _ls2.default.set('auth.token_type', response.data.token_type);
         }).catch(function (error) {
             if (error.response.status === 401) {} else {
                 // Something happened in setting up the request that triggered an Error
@@ -67195,6 +67185,12 @@ exports.default = {
     },
     check: function check() {
         return axios.get('/api/auth/check').then(function (response) {
+            // Check For Passport Token and Expiration
+            // Passport Expired in 15 Days , Refresh Token 30 Days
+            if (_ls2.default.get('access_token') !== undefined) {
+                return true;
+            }
+            // Using Laravel Login Scafold If Any
             return !!response.data.authenticated;
         }).catch(function (error) {
             console.log('Error', error.message);
