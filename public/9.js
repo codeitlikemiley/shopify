@@ -660,10 +660,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "offset-md3": ""
     }
   }, [_c('v-btn', {
+    class: {
+      primary: !_vm.loginForm.busy, accent: _vm.loginForm.busy
+    },
     attrs: {
+      "loading": _vm.loginForm.busy,
+      "disabled": _vm.loginForm.busy,
       "type": "submit",
-      "block": "",
-      "primary": ""
+      "block": ""
     }
   }, [_vm._v("Sign In")])], 1), _vm._v(" "), _c('div', {
     staticClass: "text-xs-center",

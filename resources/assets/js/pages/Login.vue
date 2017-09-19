@@ -52,7 +52,7 @@
           </v-flex>
         </v-layout>
         <v-flex xs12 sm12 md6 offset-md3>
-         <v-btn type="submit" block primary>Sign In</v-btn>
+         <v-btn :loading="loginForm.busy" :disabled="loginForm.busy" type="submit" block :class="{primary: !loginForm.busy, accent: loginForm.busy}">Sign In</v-btn>
          </v-flex>
          <div class="text-xs-center" style="padding-top:50px;">
              <p class="secondary--text body-2">Dont Have An Account Yet?  <router-link to="/register">Click Here to Register</router-link></p>
