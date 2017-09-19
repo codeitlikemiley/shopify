@@ -64470,6 +64470,10 @@ var _auth = __webpack_require__(535);
 
 var _auth2 = _interopRequireDefault(_auth);
 
+var _ls = __webpack_require__(536);
+
+var _ls2 = _interopRequireDefault(_ls);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* Lazy Loading Routes */
@@ -64553,7 +64557,7 @@ var routes = [{
     path: '/login',
     component: Login,
     meta: {
-        permission: 'any'
+        permission: 'auth|any'
     },
     fail: '/error'
 }, {
@@ -64594,7 +64598,18 @@ var router = new _vueRouter2.default({
 
 /* Middlewares */
 router.beforeEach(function (to, from, next) {
-    // authenticated
+    // guest middleware
+    if (to.matched.some(function (m) {
+        return m.meta.permission === 'auth|any';
+    })) {
+        var token = _ls2.default.get('access_token');
+
+        if (token === null) {
+            return next();
+        }
+        return next({ path: '/dashboard' });
+    }
+    // authenticated middleware
     if (to.matched.some(function (m) {
         return m.meta.requiresAuth;
     })) {
@@ -64605,7 +64620,7 @@ router.beforeEach(function (to, from, next) {
             return next();
         });
     }
-    // admin
+    // admin middleware
     if (to.matched.some(function (m) {
         return m.meta.isAdmin;
     })) {

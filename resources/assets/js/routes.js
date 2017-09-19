@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import AuthService from './services/auth'
+import Ls from './services/ls'
 /* Lazy Loading Routes */
 const Home = () => import('./pages/Home.vue')
 const About = () => import('./pages/About.vue')
@@ -70,7 +71,7 @@ const routes = [
         path: '/login',
         component: Login,
         meta: {
-            permission: 'any'
+            permission: 'auth|any'
         },
         fail: '/error'
     },
@@ -115,7 +116,16 @@ const router = new VueRouter({
 
 /* Middlewares */
 router.beforeEach((to, from, next) => {
-    // authenticated
+    // guest middleware
+    if (to.matched.some(m => m.meta.permission === 'auth|any')) {
+        let token = Ls.get('access_token')
+
+        if (token === null) {
+            return next()
+        }
+        return next({ path: '/dashboard' })
+    }
+    // authenticated middleware
     if (to.matched.some(m => m.meta.requiresAuth)) {
         return AuthService.check().then((authenticated) => {
             if (!authenticated) {
@@ -124,7 +134,7 @@ router.beforeEach((to, from, next) => {
             return next()
         })
     }
-    // admin
+    // admin middleware
     if (to.matched.some(m => m.meta.isAdmin)) {
         return AuthService.checkIsAdmin().then(admin => {
             if (!admin) {
