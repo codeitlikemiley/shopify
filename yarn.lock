@@ -1085,6 +1085,10 @@ bluebird@^3.0.5, bluebird@^3.1.1:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
 
+blueimp-gallery@^2.27.0:
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/blueimp-gallery/-/blueimp-gallery-2.27.0.tgz#7e5c25099ab483c4dea6dccabb70af6c88ea29a2"
+
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.8"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
@@ -7126,6 +7130,12 @@ vue-eslint-parser@^2.0.1-beta.0:
     espree "^3.3.2"
     esquery "^1.0.0"
     lodash "^4.17.4"
+
+vue-gallery@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/vue-gallery/-/vue-gallery-1.1.5.tgz#657ba5fabf608f09444285598c3e98567ccdc9ff"
+  dependencies:
+    blueimp-gallery "^2.27.0"
 
 vue-hot-reload-api@^2.1.0:
   version "2.1.0"

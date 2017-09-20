@@ -116,6 +116,7 @@ const router = new VueRouter({
 
 /* Middlewares */
 router.beforeEach((to, from, next) => {
+    // Add middleware for Unverified Email
     // guest middleware
     if (to.matched.some(m => m.meta.permission === 'auth|any')) {
         let token = Ls.get('access_token')

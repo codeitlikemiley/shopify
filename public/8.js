@@ -1,18 +1,18 @@
 webpackJsonp([8],{
 
-/***/ 558:
+/***/ 560:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(616)
+  __webpack_require__(648)
 }
 var Component = __webpack_require__(96)(
   /* script */
-  __webpack_require__(618),
+  __webpack_require__(650),
   /* template */
-  __webpack_require__(624),
+  __webpack_require__(656),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45,17 +45,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 616:
+/***/ 648:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(617);
+var content = __webpack_require__(649);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(257)("2b671ec0", content, false);
+var update = __webpack_require__(258)("2b671ec0", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -72,10 +72,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 617:
+/***/ 649:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(256)(undefined);
+exports = module.exports = __webpack_require__(257)(undefined);
 // imports
 
 
@@ -87,7 +87,7 @@ exports.push([module.i, "\n.shopping-cart[data-v-27d7ed0e] {\n  position: absolu
 
 /***/ }),
 
-/***/ 618:
+/***/ 650:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97,7 +97,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _Basket = __webpack_require__(619);
+var _Basket = __webpack_require__(651);
 
 var _Basket2 = _interopRequireDefault(_Basket);
 
@@ -178,19 +178,19 @@ exports.default = {
 
 /***/ }),
 
-/***/ 619:
+/***/ 651:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(620)
+  __webpack_require__(652)
 }
 var Component = __webpack_require__(96)(
   /* script */
-  __webpack_require__(622),
+  __webpack_require__(654),
   /* template */
-  __webpack_require__(623),
+  __webpack_require__(655),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -223,17 +223,17 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 620:
+/***/ 652:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(621);
+var content = __webpack_require__(653);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(257)("4145d312", content, false);
+var update = __webpack_require__(258)("4145d312", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -250,10 +250,10 @@ if(false) {
 
 /***/ }),
 
-/***/ 621:
+/***/ 653:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(256)(undefined);
+exports = module.exports = __webpack_require__(257)(undefined);
 // imports
 
 
@@ -265,7 +265,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 /***/ }),
 
-/***/ 622:
+/***/ 654:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -385,7 +385,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 623:
+/***/ 655:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -482,7 +482,7 @@ if (false) {
 
 /***/ }),
 
-/***/ 624:
+/***/ 656:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
