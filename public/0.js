@@ -4488,11 +4488,25 @@ var _VideoGallery = __webpack_require__(611);
 
 var _VideoGallery2 = _interopRequireDefault(_VideoGallery);
 
+var _LogoSlider = __webpack_require__(713);
+
+var _LogoSlider2 = _interopRequireDefault(_LogoSlider);
+
 var _theme = __webpack_require__(562);
 
 var _theme2 = _interopRequireDefault(_theme);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     mixins: [_theme2.default],
@@ -4505,17 +4519,11 @@ exports.default = {
         MainLayout: _Main2.default,
         ShowCase: _Showcase2.default,
         Carousel: _Carousel2.default,
-        VideoGallery: _VideoGallery2.default
+        VideoGallery: _VideoGallery2.default,
+        LogoSlider: _LogoSlider2.default
     }
 
-}; //
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 
@@ -5986,13 +5994,382 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     style: ({
       'background-color': _vm.backgroundcolor
     })
-  }, [_c('carousel'), _vm._v(" "), _c('video-gallery'), _vm._v(" "), _c('show-case')], 1)
+  }, [_c('carousel'), _vm._v(" "), _c('video-gallery'), _vm._v(" "), _c('show-case'), _vm._v(" "), _c('logo-slider')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
      require("vue-hot-reload-api").rerender("data-v-69ef10f6", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 713:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(714)
+}
+var Component = __webpack_require__(96)(
+  /* script */
+  __webpack_require__(716),
+  /* template */
+  __webpack_require__(717),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "C:\\Users\\uriah\\sites\\www\\shopify\\resources\\assets\\js\\components\\home\\LogoSlider.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] LogoSlider.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-100e5d44", Component.options)
+  } else {
+    hotAPI.reload("data-v-100e5d44", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 714:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(715);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(258)("2cefee84", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-100e5d44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LogoSlider.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-100e5d44\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LogoSlider.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 715:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(257)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 716:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    mounted: function mounted() {
+        jssor_1_slider_init();
+    }
+};
+
+/***/ }),
+
+/***/ 717:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "row"
+  }, [_c('h4', {
+    staticClass: "text-xs-center primary--text"
+  }, [_vm._v("We Accept the Following Mode of Payment")]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "position": "relative",
+      "margin": "0 auto",
+      "top": "0px",
+      "left": "0px",
+      "width": "980px",
+      "height": "100px",
+      "overflow": "hidden",
+      "visibility": "hidden"
+    },
+    attrs: {
+      "id": "jssor_1"
+    }
+  }, [_c('div', {
+    staticStyle: {
+      "position": "absolute",
+      "top": "0px",
+      "left": "0px"
+    },
+    attrs: {
+      "data-u": "loading"
+    }
+  }, [_c('div', {
+    staticStyle: {
+      "filter": "alpha(opacity=70)",
+      "opacity": "0.7",
+      "position": "absolute",
+      "display": "block",
+      "top": "0px",
+      "left": "0px",
+      "width": "100%",
+      "height": "100%"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "position": "absolute",
+      "display": "block",
+      "background": "url('img/loading.gif') no-repeat center center",
+      "top": "0px",
+      "left": "0px",
+      "width": "100%",
+      "height": "100%"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "cursor": "default",
+      "position": "relative",
+      "top": "0px",
+      "left": "0px",
+      "width": "980px",
+      "height": "100px",
+      "overflow": "hidden"
+    },
+    attrs: {
+      "data-u": "slides"
+    }
+  }, [_c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/bdo.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/bpi.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/cebuana-lhuillier.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/eastwest.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/lbc.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/mlhuilier.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/palawan-express.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/Union-bank.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/western_union.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/gcash.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/smart-money.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/paypal.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/master.jpg"
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticStyle: {
+      "display": "none"
+    }
+  }, [_c('img', {
+    attrs: {
+      "data-u": "image",
+      "src": "/img/mop/visa.jpg"
+    }
+  })])])])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-100e5d44", module.exports)
   }
 }
 

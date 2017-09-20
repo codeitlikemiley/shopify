@@ -23,6 +23,7 @@
 @if(config('echo.realtime')===true)
 <script src="//{{ Request::getHost() }}:6001/socket.io/socket.io.js"></script>
 @endif
+@include('partials.logoslider')
 <script src="{{ mix('/js/manifest.js') }}"></script>
 <script src="{{mix('/js/vendor.js')}}"></script>
 <script src="{{mix('/js/app.js')}}"></script>
