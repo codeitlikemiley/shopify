@@ -9,37 +9,51 @@
 </div>
 <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/bdo.png" />
+<img data-u="image" src="/img/mop/bdo.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/bpi.png" />
+<img data-u="image" src="/img/mop/bpi.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/cebuana.png" />
+<img data-u="image" src="/img/mop/cebuana-lhuillier.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/eastwest.png" />
+<img data-u="image" src="/img/mop/eastwest.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/gcash.png" />
+<img data-u="image" src="/img/mop/lbc.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/lbc.png" />
+<img data-u="image" src="/img/mop/mlhuilier.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/mlhui.png" />
+<img data-u="image" src="/img/mop/palawan-express.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/palawan.png" />
+<img data-u="image" src="/img/mop/Union-bank.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/smart.png" />
+<img data-u="image" src="/img/mop/western_union.jpg" />
 </div>
 <div style="display: none;">
-<img data-u="image" src="/img/gateway/western.png" />
+<img data-u="image" src="/img/mop/gcash.jpg" />
+</div>
+<div style="display: none;">
+<img data-u="image" src="/img/mop/smart-money.jpg" />
+</div>
+<div style="display: none;">
+<img data-u="image" src="/img/mop/paypal.jpg" />
+</div>
+<div style="display: none;">
+<img data-u="image" src="/img/mop/master.jpg" />
+</div>
+<div style="display: none;">
+<img data-u="image" src="/img/mop/visa.jpg" />
+</div>
+
 </div>
 </div>
-</div>
+
 </div>
 </template>
 

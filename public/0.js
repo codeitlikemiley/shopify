@@ -4607,7 +4607,7 @@ exports = module.exports = __webpack_require__(257)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -4661,7 +4661,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
     data: function data() {
         return {
-            showcase: [{ show: true, title: 'Organic Products', tagline: 'We Promote Using Organic and Environmental Friendly Products. All Our Products Are Made 100% From Organic Substances.', src: '/img/organic.png', xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }, { show: true, title: 'Free Shipping', tagline: 'Buy a Minimum Required Amount From All Our Products and Receive Free Shipping. Only to People Residing Philippines.', src: '/img/free-delivery.png', xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }, { show: true, title: 'Referral Program', tagline: 'Want to Resell Our Products and Sell Online? Join Our Affiliate Program and Start Earning From Your Online Presence.', src: '/img/reseller.png', xs: 12, sm: 12, md: 4, lg: 4, xl: 4 }]
+            showcase: [{ show: true, title: 'Organic Products', tagline: 'We Promote Using Organic and Environmental Friendly Products. All Our Products Are Made 100% From Organic Substances.', src: '/img/organic.png', xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }, { show: true, title: 'Affordable Franchise', tagline: 'Start An Affordable Franchise yet Competitive With Your Market. We Provide Free Training and Orientation.Site Exploration For Faster ROI and A Recommendedation and Consultation Of Market Competitiveness.', src: '/img/foodcart.jpg', xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }, { show: true, title: 'Free Shipping', tagline: 'Buy a Minimum Required Amount From All Our Products and Receive Free Shipping. Only to People Residing Philippines.', src: '/img/free-delivery.png', xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }, { show: true, title: 'Referral Program', tagline: 'Want to Resell Our Products and Sell Online? Join Our Affiliate Program and Start Earning From Your Online Presence.', src: '/img/reseller.png', xs: 12, sm: 12, md: 3, lg: 3, xl: 3 }]
         };
     }
 };
@@ -4672,7 +4672,11 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('v-container', [_c('v-layout', {
+  return _c('v-container', {
+    attrs: {
+      "fluid": ""
+    }
+  }, [_c('v-layout', {
     attrs: {
       "row": "",
       "wrap": ""
@@ -4814,7 +4818,7 @@ exports = module.exports = __webpack_require__(257)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -4846,7 +4850,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = {
     data: function data() {
         return {
-            images: [{ src: '/img/parallax1.jpg', headline: 'Parallax1', 'subheader': 'Subheader1', 'buttontext': 'Buy Now!', 'buttonlink': 'cart' }, { src: '/img/parallax2.png', headline: 'Parallax2', 'subheader': 'Subheader2', 'buttontext': 'Learn More...', 'buttonlink': 'about' }]
+            images: [{ src: '/img/parallax1.jpg', headline: 'Amazing Organic Health Products', 'subheader': 'Choose From A Wide Variety of Health And Organic Products', 'buttontext': 'See All Products', 'buttonlink': 'about', 'icon': 'shopping_basket' }, { src: '/img/parallax1.jpg', headline: 'Competetive Low Cost Foodcart Franchise', 'subheader': 'Start For As Low As P16,888 ONLY!', 'buttontext': 'Be A Franchisee Now!', 'buttonlink': 'about', 'icon': 'store_mall_directory' }, { src: '/img/parallax1.jpg', headline: 'If You Think Our Product Is Effective', 'subheader': 'Why Not Get Paid For Referring New Consumer?', 'buttontext': 'Be A Reseller', 'buttonlink': 'about', 'icon': 'person_pin' }, { src: '/img/parallax2.png', headline: 'Interested But Still Undecided?', 'subheader': 'Our Customer Service Is Open For Your Questions', 'buttontext': 'Contact Us', 'buttonlink': 'support', 'icon': 'textsms' }]
         };
     },
     methods: {
@@ -4887,7 +4891,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           _vm.goToLink(item.buttonlink)
         }
       }
-    }, [_vm._v(_vm._s(item.buttontext))])], 1)])
+    }, [_vm._v(_vm._s(item.buttontext) + " "), _c('v-icon', {
+      attrs: {
+        "right": "",
+        "dark": ""
+      }
+    }, [_vm._v(_vm._s(item.icon))])], 1)], 1)])
   }))
 },staticRenderFns: []}
 module.exports.render._withStripped = true
@@ -6086,7 +6095,7 @@ exports = module.exports = __webpack_require__(257)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -6102,20 +6111,6 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6244,7 +6239,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/bdo.jpg"
+      "src": "/img/gateway/bdo.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6253,7 +6248,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/bpi.jpg"
+      "src": "/img/gateway/bpi.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6262,7 +6257,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/cebuana-lhuillier.jpg"
+      "src": "/img/gateway/cebuana.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6271,7 +6266,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/eastwest.jpg"
+      "src": "/img/gateway/eastwest.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6280,7 +6275,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/lbc.jpg"
+      "src": "/img/gateway/gcash.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6289,7 +6284,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/mlhuilier.jpg"
+      "src": "/img/gateway/lbc.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6298,7 +6293,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/palawan-express.jpg"
+      "src": "/img/gateway/mlhui.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6307,7 +6302,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/Union-bank.jpg"
+      "src": "/img/gateway/palawan.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6316,7 +6311,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/western_union.jpg"
+      "src": "/img/gateway/smart.png"
     }
   })]), _vm._v(" "), _c('div', {
     staticStyle: {
@@ -6325,43 +6320,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     attrs: {
       "data-u": "image",
-      "src": "/img/mop/gcash.jpg"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('img', {
-    attrs: {
-      "data-u": "image",
-      "src": "/img/mop/smart-money.jpg"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('img', {
-    attrs: {
-      "data-u": "image",
-      "src": "/img/mop/paypal.jpg"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('img', {
-    attrs: {
-      "data-u": "image",
-      "src": "/img/mop/master.jpg"
-    }
-  })]), _vm._v(" "), _c('div', {
-    staticStyle: {
-      "display": "none"
-    }
-  }, [_c('img', {
-    attrs: {
-      "data-u": "image",
-      "src": "/img/mop/visa.jpg"
+      "src": "/img/gateway/western.png"
     }
   })])])])])
 }]}
