@@ -275,7 +275,7 @@ exports = module.exports = __webpack_require__(257)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -299,8 +299,80 @@ var _theme2 = _interopRequireDefault(_theme);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-    mixins: [_theme2.default]
+    mixins: [_theme2.default],
+    data: function data() {
+        return {
+            products: [{ header: 'Products' }, { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }],
+            foodcarts: [{ header: 'Food Carts' }, { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }],
+            contacts: [{ header: 'Contact Details' }, { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }]
+        };
+    }
 }; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -313,9 +385,171 @@ exports.default = {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('v-footer', {
+  return _c('v-container', {
+    staticClass: "pa-0 ma-0 pt-5",
+    attrs: {
+      "fluid": ""
+    }
+  }, [_c('v-layout', {
+    attrs: {
+      "row": "",
+      "wrap": ""
+    }
+  }, [_c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm12": "",
+      "md4": "",
+      "lg4": "",
+      "xl4": ""
+    }
+  }, [_c('v-card-text', {
+    staticClass: "pa-0"
+  }, [_c('v-list', {
+    staticClass: "text-xs-center",
+    attrs: {
+      "three-line": ""
+    }
+  }, [_vm._l((_vm.products), function(item, i) {
+    return [(item.header) ? _c('v-subheader', {
+      key: i,
+      staticClass: "primary--text headline",
+      domProps: {
+        "textContent": _vm._s(item.header)
+      }
+    }) : (item.divider) ? _c('v-divider', {
+      key: i,
+      attrs: {
+        "inset": item.inset
+      }
+    }) : _c('v-list-tile', {
+      key: i,
+      attrs: {
+        "avatar": "",
+        "download": ""
+      }
+    }, [_c('v-list-tile-avatar', [_c('img', {
+      attrs: {
+        "src": item.avatar
+      }
+    })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', {
+      staticClass: "primary--text",
+      domProps: {
+        "innerHTML": _vm._s(item.title)
+      }
+    }), _vm._v(" "), _c('v-list-tile-sub-title', {
+      domProps: {
+        "innerHTML": _vm._s(item.subtitle)
+      }
+    })], 1)], 1)]
+  })], 2)], 1)], 1), _vm._v(" "), _c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm12": "",
+      "md4": "",
+      "lg4": "",
+      "xl4": ""
+    }
+  }, [_c('v-card-text', {
+    staticClass: "pa-0"
+  }, [_c('v-list', {
+    staticClass: "text-xs-center",
+    attrs: {
+      "three-line": ""
+    }
+  }, [_vm._l((_vm.foodcarts), function(item, i) {
+    return [(item.header) ? _c('v-subheader', {
+      key: i,
+      staticClass: "primary--text headline",
+      domProps: {
+        "textContent": _vm._s(item.header)
+      }
+    }) : (item.divider) ? _c('v-divider', {
+      key: i,
+      attrs: {
+        "inset": item.inset
+      }
+    }) : _c('v-list-tile', {
+      key: i,
+      attrs: {
+        "avatar": "",
+        "download": ""
+      }
+    }, [_c('v-list-tile-avatar', [_c('img', {
+      attrs: {
+        "src": item.avatar
+      }
+    })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', {
+      staticClass: "primary--text",
+      domProps: {
+        "innerHTML": _vm._s(item.title)
+      }
+    }), _vm._v(" "), _c('v-list-tile-sub-title', {
+      domProps: {
+        "innerHTML": _vm._s(item.subtitle)
+      }
+    })], 1)], 1)]
+  })], 2)], 1)], 1), _vm._v(" "), _c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm12": "",
+      "md4": "",
+      "lg4": "",
+      "xl4": ""
+    }
+  }, [_c('v-card-text', {
+    staticClass: "pa-0"
+  }, [_c('v-list', {
+    staticClass: "text-xs-center",
+    attrs: {
+      "three-line": ""
+    }
+  }, [_vm._l((_vm.contacts), function(item, i) {
+    return [(item.header) ? _c('v-subheader', {
+      key: i,
+      staticClass: "primary--text headline",
+      domProps: {
+        "textContent": _vm._s(item.header)
+      }
+    }) : (item.divider) ? _c('v-divider', {
+      key: i,
+      attrs: {
+        "inset": item.inset
+      }
+    }) : _c('v-list-tile', {
+      key: i,
+      attrs: {
+        "avatar": "",
+        "download": ""
+      }
+    }, [_c('v-list-tile-avatar', [_c('img', {
+      attrs: {
+        "src": item.avatar
+      }
+    })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', {
+      staticClass: "primary--text",
+      domProps: {
+        "innerHTML": _vm._s(item.title)
+      }
+    }), _vm._v(" "), _c('v-list-tile-sub-title', {
+      domProps: {
+        "innerHTML": _vm._s(item.subtitle)
+      }
+    })], 1)], 1)]
+  })], 2)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+    attrs: {
+      "row": "",
+      "wrap": ""
+    }
+  }, [_c('v-flex', {
+    attrs: {
+      "xs12": ""
+    }
+  }, [_c('v-footer', {
     style: (_vm.footerStyle)
-  }, [_c('span', [_vm._v("© " + _vm._s(_vm.year) + " " + _vm._s(_vm.domain) + " ® | " + _vm._s(_vm.trademark) + "™")])])
+  }, [_c('span', {
+    staticClass: "text-xs-center"
+  }, [_vm._v("© " + _vm._s(_vm.year) + " " + _vm._s(_vm.domain) + " ® | " + _vm._s(_vm.trademark) + "™")])])], 1)], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
