@@ -75,7 +75,7 @@ export default {
     mixins: [Theme],
     data: () => ({
         products: [
-            { header: 'Products' },
+            { header: 'Featured Products' },
             { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' },
             { divider: true, inset: true },
             { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' },
@@ -83,7 +83,7 @@ export default {
             { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }
         ],
         foodcarts: [
-            { header: 'Food Carts' },
+            { header: 'Featured Food Carts' },
             { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' },
             { divider: true, inset: true },
             { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' },
