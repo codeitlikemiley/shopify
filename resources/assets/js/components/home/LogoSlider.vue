@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row pb-5">
 <h4 class="text-xs-center primary--text">We Accept the Following Mode of Payment</h4>
 <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
 <!-- Loading Screen -->

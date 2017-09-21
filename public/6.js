@@ -275,7 +275,7 @@ exports = module.exports = __webpack_require__(257)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -296,88 +296,89 @@ var _theme = __webpack_require__(562);
 
 var _theme2 = _interopRequireDefault(_theme);
 
+var _VLink = __webpack_require__(577);
+
+var _VLink2 = _interopRequireDefault(_VLink);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 exports.default = {
     mixins: [_theme2.default],
     data: function data() {
         return {
-            products: [{ header: 'Featured Products' }, { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }],
-            foodcarts: [{ header: 'Featured Food Carts' }, { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }],
-            contacts: [{ header: 'Contact Details' }, { avatar: '/img/organic.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/foodcart.jpg', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }, { divider: true, inset: true }, { avatar: '/img/reseller.png', title: 'Brunch this weekend?', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?' }]
+            products: [{ icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Photos', subtitle: 'Jan 9, 2014' }, { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Recipes', subtitle: 'Jan 17, 2014' }, { icon: 'folder', iconClass: 'grey lighten-1 white--text', title: 'Work', subtitle: 'Jan 28, 2014' }],
+            items2: [{ icon: 'assignment', iconClass: 'blue white--text', title: 'Vacation itinerary', subtitle: 'Jan 20, 2014' }, { icon: 'call_to_action', iconClass: 'amber white--text', title: 'Kitchen remodel', subtitle: 'Jan 10, 2014' }],
+            items: [{ avatar: '/img/organic.png', title: 'Grape juice with Garcinia Cambogia', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/products/grape-juice-with-garcinia-cambodia' }, { avatar: '/img/foodcart.jpg', title: 'Organic Pure Barley Powered Drink', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/products/organic-pure-barley-powered-drink' }, { avatar: '/img/reseller.png', title: 'Coffee Mix with Glutathione', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/products/coffee-mix-with-gluthathione' }, { avatar: '/img/reseller.png', title: 'Choco Barley Powered Drink', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/products/choco-barley-powdered-drink' }],
+            foodcarts: [{ avatar: '/img/organic.png', title: 'Mang Siomai', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/foodcart-franchise/mang-siomai' }, { avatar: '/img/foodcart.jpg', title: 'Hongkong Fried Noodles', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/foodcart-franchise/hongkong-fried-noodles' }, { avatar: '/img/reseller.png', title: 'Dumpling King', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/foodcart-franchise/dumpling-king' }, { avatar: '/img/reseller.png', title: 'Chinky Pao', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/foodcart-franchise/chinky-pao' }],
+            policies: [{ avatar: '/img/organic.png', title: 'Cookie Policy', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/cookie-policy' }, { avatar: '/img/foodcart.jpg', title: 'Privacy Policy', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/privacy-policy' }, { avatar: '/img/reseller.png', title: 'Refund Policy', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/refund-policy' }, { avatar: '/img/reseller.png', title: 'Anti-Spam Policy', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: '/anti-spam-policy' }],
+            contacts: [{ avatar: '/img/organic.png', title: 'Landline', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: 'facebook.com/fanpage' }, { avatar: '/img/foodcart.jpg', title: 'Mobile', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: 'twitter.com/fanpage' }, { avatar: '/img/reseller.png', title: 'Skype', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: 'youtube.com/fanpage' }, { avatar: '/img/reseller.png', title: 'Viber', subtitle: '<span class=\'info--text text--lighten-2\'>Ali Connors</span> &mdash; I\'ll be in your neighborhood doing errands this weekend. Do you want to hang out?', link: 'viber.com/number' }]
+
         };
+    },
+    components: {
+        VLink: _VLink2.default
     }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+};
 
 /***/ }),
 
@@ -386,7 +387,10 @@ exports.default = {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('v-container', {
-    staticClass: "pa-0 ma-0 pt-5",
+    staticClass: "pa-0 ma-0",
+    class: {
+      'grey': true, 'darken-3': true
+    },
     attrs: {
       "fluid": ""
     }
@@ -399,144 +403,131 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "xs12": "",
       "sm12": "",
-      "md4": "",
-      "lg4": "",
-      "xl4": ""
+      "md3": "",
+      "lg3": "",
+      "xl3": ""
     }
-  }, [_c('v-card-text', {
-    staticClass: "pa-0"
-  }, [_c('v-list', {
-    staticClass: "text-xs-center",
+  }, [_c('div', [_c('v-subheader', {
+    staticClass: "headline primary--text",
     attrs: {
-      "three-line": ""
+      "inset": ""
     }
-  }, [_vm._l((_vm.products), function(item, i) {
-    return [(item.header) ? _c('v-subheader', {
-      key: i,
-      staticClass: "primary--text headline",
-      domProps: {
-        "textContent": _vm._s(item.header)
-      }
-    }) : (item.divider) ? _c('v-divider', {
-      key: i,
-      attrs: {
-        "inset": item.inset
-      }
-    }) : _c('v-list-tile', {
-      key: i,
-      attrs: {
-        "avatar": "",
-        "download": ""
-      }
-    }, [_c('v-list-tile-avatar', [_c('img', {
-      attrs: {
-        "src": item.avatar
-      }
-    })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', {
-      staticClass: "primary--text",
-      domProps: {
-        "innerHTML": _vm._s(item.title)
-      }
-    }), _vm._v(" "), _c('v-list-tile-sub-title', {
-      domProps: {
-        "innerHTML": _vm._s(item.subtitle)
-      }
-    })], 1)], 1)]
-  })], 2)], 1)], 1), _vm._v(" "), _c('v-flex', {
+  }, [_vm._v("Featured Products")]), _vm._v(" "), _c('v-list', {
+    attrs: {
+      "dense": ""
+    }
+  }, [_c('v-link', {
+    attrs: {
+      "title": "Grape juice with Garcinia Cambogia",
+      "href": '/products/grape-juice-with-garcinia-cambodia'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Organic Pure Barley Powered Drink",
+      "href": '/products/organic-pure-barley-powered-drink'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Coffee Mix with Glutathione",
+      "href": '/products/coffee-mix-with-gluthathione'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Choco Barley Powered Drink",
+      "href": '/products/choco-barley-powdered-drink'
+    }
+  })], 1)], 1)]), _vm._v(" "), _c('v-flex', {
     attrs: {
       "xs12": "",
       "sm12": "",
-      "md4": "",
-      "lg4": "",
-      "xl4": ""
+      "md3": "",
+      "lg3": "",
+      "xl3": ""
     }
-  }, [_c('v-card-text', {
-    staticClass: "pa-0"
-  }, [_c('v-list', {
-    staticClass: "text-xs-center",
+  }, [_c('div', [_c('v-subheader', {
+    staticClass: "headline primary--text",
     attrs: {
-      "three-line": ""
+      "inset": ""
     }
-  }, [_vm._l((_vm.foodcarts), function(item, i) {
-    return [(item.header) ? _c('v-subheader', {
-      key: i,
-      staticClass: "primary--text headline",
-      domProps: {
-        "textContent": _vm._s(item.header)
-      }
-    }) : (item.divider) ? _c('v-divider', {
-      key: i,
-      attrs: {
-        "inset": item.inset
-      }
-    }) : _c('v-list-tile', {
-      key: i,
-      attrs: {
-        "avatar": "",
-        "download": ""
-      }
-    }, [_c('v-list-tile-avatar', [_c('img', {
-      attrs: {
-        "src": item.avatar
-      }
-    })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', {
-      staticClass: "primary--text",
-      domProps: {
-        "innerHTML": _vm._s(item.title)
-      }
-    }), _vm._v(" "), _c('v-list-tile-sub-title', {
-      domProps: {
-        "innerHTML": _vm._s(item.subtitle)
-      }
-    })], 1)], 1)]
-  })], 2)], 1)], 1), _vm._v(" "), _c('v-flex', {
+  }, [_vm._v("Featured Food Carts")]), _vm._v(" "), _c('v-list', {
+    attrs: {
+      "dense": ""
+    }
+  }, [_c('v-link', {
+    attrs: {
+      "title": "Mang Siomai",
+      "href": '/foodcart-franchise/mang-siomai'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Hongkong Fried Noodles",
+      "href": '/foodcart-franchise/hongkong-fried-noodles'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Dumpling King",
+      "href": '/foodcart-franchise/dumpling-king'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Chinky Pao",
+      "href": '/foodcart-franchise/chinky-pao'
+    }
+  })], 1)], 1)]), _vm._v(" "), _c('v-flex', {
     attrs: {
       "xs12": "",
       "sm12": "",
-      "md4": "",
-      "lg4": "",
-      "xl4": ""
+      "md3": "",
+      "lg3": "",
+      "xl3": ""
     }
-  }, [_c('v-card-text', {
-    staticClass: "pa-0"
-  }, [_c('v-list', {
-    staticClass: "text-xs-center",
+  }, [_c('div', [_c('v-subheader', {
+    staticClass: "headline primary--text",
     attrs: {
-      "three-line": ""
+      "inset": ""
     }
-  }, [_vm._l((_vm.contacts), function(item, i) {
-    return [(item.header) ? _c('v-subheader', {
-      key: i,
-      staticClass: "primary--text headline",
-      domProps: {
-        "textContent": _vm._s(item.header)
-      }
-    }) : (item.divider) ? _c('v-divider', {
-      key: i,
-      attrs: {
-        "inset": item.inset
-      }
-    }) : _c('v-list-tile', {
-      key: i,
-      attrs: {
-        "avatar": "",
-        "download": ""
-      }
-    }, [_c('v-list-tile-avatar', [_c('img', {
-      attrs: {
-        "src": item.avatar
-      }
-    })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', {
-      staticClass: "primary--text",
-      domProps: {
-        "innerHTML": _vm._s(item.title)
-      }
-    }), _vm._v(" "), _c('v-list-tile-sub-title', {
-      domProps: {
-        "innerHTML": _vm._s(item.subtitle)
-      }
-    })], 1)], 1)]
-  })], 2)], 1)], 1)], 1), _vm._v(" "), _c('v-layout', {
+  }, [_vm._v("Compliance")]), _vm._v(" "), _c('v-list', {
+    attrs: {
+      "dense": ""
+    }
+  }, [_c('v-link', {
+    attrs: {
+      "title": "Cookie Policy",
+      "href": '/cookie-policy'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Privacy Policy",
+      "href": '/privacy-policy'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Refund Policy",
+      "href": '/refund-policy'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Anti-Spam Policy",
+      "href": '/anti-spam-policy'
+    }
+  })], 1)], 1)]), _vm._v(" "), _c('v-flex', {
+    attrs: {
+      "xs12": "",
+      "sm12": "",
+      "md3": "",
+      "lg3": "",
+      "xl3": ""
+    }
+  }, [_c('div', [_c('v-subheader', {
+    staticClass: "headline primary--text",
+    attrs: {
+      "inset": ""
+    }
+  }, [_vm._v("Contact Details")]), _vm._v(" "), _c('v-list', {
+    attrs: {
+      "dense": ""
+    }
+  }, [_vm._v("'/facebook'\">"), _vm._v(" "), _vm._v("'/twitter'\">"), _vm._v(" "), _vm._v("'/instagram'\">"), _vm._v(" "), _vm._v("'/linkedin'\">"), _vm._v(" "), _vm._v("'/youtube'\">")])], 1)])], 1), _vm._v(" "), _c('v-layout', {
     attrs: {
       "row": "",
       "wrap": ""
