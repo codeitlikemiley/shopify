@@ -983,7 +983,32 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "dense": ""
     }
-  }, [_vm._v("'/facebook'\">"), _vm._v(" "), _vm._v("'/twitter'\">"), _vm._v(" "), _vm._v("'/instagram'\">"), _vm._v(" "), _vm._v("'/linkedin'\">"), _vm._v(" "), _vm._v("'/youtube'\">")])], 1)])], 1), _vm._v(" "), _c('v-layout', {
+  }, [_c('v-link', {
+    attrs: {
+      "title": "Landline",
+      "href": '/facebook'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Mobile 1",
+      "href": '/twitter'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Mobile 2",
+      "href": '/instagram'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Mobile 3",
+      "href": '/linkedin'
+    }
+  }), _vm._v(" "), _c('v-link', {
+    attrs: {
+      "title": "Viber",
+      "href": '/youtube'
+    }
+  })], 1)], 1)])], 1), _vm._v(" "), _c('v-layout', {
     attrs: {
       "row": "",
       "wrap": ""

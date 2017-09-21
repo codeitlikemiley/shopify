@@ -38,11 +38,11 @@
       <div>
         <v-subheader inset class="headline primary--text">Contact Details</v-subheader>
         <v-list dense>
-        <v-link title="Landline:href="'/facebook'"></v-link>
-        <v-link title="Mobile 1:href="'/twitter'"></v-link>
-        <v-link title="Mobile 2:href="'/instagram'"></v-link>
-        <v-link title="Mobile 3:href="'/linkedin'"></v-link>
-        <v-link title="Viber:href="'/youtube'"></v-link>
+        <v-link title="Landline" :href="'/facebook'"></v-link>
+        <v-link title="Mobile 1" :href="'/twitter'"></v-link>
+        <v-link title="Mobile 2" :href="'/instagram'"></v-link>
+        <v-link title="Mobile 3" :href="'/linkedin'"></v-link>
+        <v-link title="Viber" :href="'/youtube'"></v-link>
       </v-list>
       </div>
     </v-flex>
